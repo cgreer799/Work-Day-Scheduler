@@ -16,3 +16,5 @@ function colorRow(rowNum){
 for (var i = 9; i <= 17; i++) {
     colorRow(i);
 }
+
+$("#currentDay").text(moment().format("dddd, MMMM do"));
