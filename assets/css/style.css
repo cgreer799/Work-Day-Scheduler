@@ -69,3 +69,36 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  width:150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+input{
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+.time{
+  border-left: hidden;
+  box-shadow: 2px 0px 0px 0px grey;
+}
+
+.schedule-info{
+  width: 80%;
+  box-shadow: 2px 0px 0px 0px grey;
+}
+
+.save-image{
+  width: 100%;
+}
