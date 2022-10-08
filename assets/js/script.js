@@ -13,8 +13,18 @@ function colorRow(rowNum){
     inputBackground.addClass(className);
 }
 
-for (var i = 9; i <= 17; i++) {
-    colorRow(i);
+function handleRow(rowNum){
+    let inputField = $("#input-" + rowNum);
+    let saveButton = $("#save-button-" + rowNum);
+    saveButton.click(function() {
+        localStorage.setItem("row-contents-" + rowNum, inputField.val());
+    });
+    inputField.val(localStorage.getItem("row-contents-" + rowNum));
 }
 
-$("#currentDay").text(moment().format("dddd, MMMM do"));
+for (var i = 9; i <= 17; i++) {
+    colorRow(i);
+    handleRow(i);
+}
+
+$("#currentDay").text(moment().format("dddd, MMMM Do"));
