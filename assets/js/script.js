@@ -1,11 +1,11 @@
 function colorRow(rowNum){
     let currentMoment = moment();
     let currentHour = currentMoment.hour();
-    var className = "past-row";
+    var className = "past";
     if (currentHour == rowNum) {
-        className = "current-row"
+        className = "present"
     } else if (currentHour < rowNum) {
-        className = "future-row"
+        className = "future"
     }
     let inputField = $("#input-" + rowNum);
     inputField.addClass(className);
