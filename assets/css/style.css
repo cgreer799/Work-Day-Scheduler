@@ -102,3 +102,15 @@ input:focus{
 .save-image{
   width: 100%;
 }
+
+.past-row{
+  background-color: gray;
+}
+
+.current-row{
+  background-color: red;
+}
+
+.future-row{
+  background-color: green;
+}
